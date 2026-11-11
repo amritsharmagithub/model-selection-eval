@@ -1,0 +1,67 @@
+diff --git a/src/tau2/agent/llm_agent.py b/src/tau2/agent/llm_agent.py
+index 554c8e5..b00896c 100644
+--- a/src/tau2/agent/llm_agent.py
++++ b/src/tau2/agent/llm_agent.py
+@@ -21,6 +21,35 @@ from tau2.data_model.tasks import Action, Task
+ from tau2.environment.tool import Tool, as_tool
+ from tau2.utils.llm_utils import generate
+ 
++
++def _sweep_extra_kwargs() -> dict:
++    """Agent-only thinking/effort overrides for parameter sweeps.
++
++    Reads TAU2_AGENT_THINKING (JSON, e.g. '{"type":"adaptive"}') and
++    TAU2_AGENT_EFFORT (e.g. 'high'). Empty/unset -> no change.
++    """
++    import json
++    import os
++
++    extra: dict = {}
++    thinking = os.environ.get("TAU2_AGENT_THINKING", "").strip()
++    effort = os.environ.get("TAU2_AGENT_EFFORT", "").strip()
++    if thinking:
++        extra["thinking"] = json.loads(thinking)
++    if effort:
++        extra["output_config"] = {"effort": effort}
++    if thinking or effort:
++        extra["temperature"] = 1
++        extra["max_tokens"] = 16000
++    if os.environ.get("TAU2_AGENT_PROMPT_CACHE", "").strip() == "1":
++        # Cache the system prompt + tools and the growing conversation prefix.
++        extra["cache_control_injection_points"] = [
++            {"location": "message", "role": "system"},
++            {"location": "message", "index": -1},
++        ]
++    return extra
++
++
+ AGENT_INSTRUCTION = """
+ You are a customer service agent that helps the user according to the <policy> provided below.
+ In each turn you can either:
+@@ -140,7 +169,7 @@ class LLMAgent(
+             tools=self.tools,
+             messages=messages,
+             call_name="agent_response",
+-            **self.llm_args,
++            **{**self.llm_args, **_sweep_extra_kwargs()},
+         )
+         return assistant_message
+ 
+@@ -264,7 +293,7 @@ class LLMGTAgent(
+             tools=self.tools,
+             messages=messages,
+             call_name="agent_gt_response",
+-            **self.llm_args,
++            **{**self.llm_args, **_sweep_extra_kwargs()},
+         )
+         state.messages.append(assistant_message)
+         return assistant_message, state
+@@ -482,7 +511,7 @@ class LLMSoloAgent(
+             messages=messages,
+             tool_choice="required",
+             call_name="agent_solo_response",
+-            **self.llm_args,
++            **{**self.llm_args, **_sweep_extra_kwargs()},
+         )
+         if not assistant_message.is_tool_call():
+             raise ValueError("LLMSoloAgent only supports tool calls.")

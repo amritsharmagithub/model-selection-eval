@@ -108,6 +108,8 @@ This was a small pilot: 5 tasks, run once each. One task equals 20 percentage po
 README.md        This overview
 BUILD_LOG.md     A short log of the key steps, problems, and lessons
 charts/          The three charts and the full HTML report
+code/            The scripts that ran the test and drew the charts, plus the change made to tau2-bench
+results/         The raw results and the final recommendation
 screenshots/     Screenshots from each stage of the project
 ```
 
@@ -122,4 +124,4 @@ This project is a learning exercise based on other people's work. All credit for
 - **Benchmark:** Sierra, `tau2-bench`. https://github.com/sierra-research/tau2-bench (see the repository for its license)
 - **Claude Code** and the **Claude API** by Anthropic
 
-The code changes were made to my local copy of tau2-bench and are not included here. This repository holds my results, notes, and screenshots.
+The scripts in code/ were written by Claude Code under my review. llm_agent_patch.diff shows the only change made to my local copy of tau2-bench; the rest of tau2-bench is not included here.

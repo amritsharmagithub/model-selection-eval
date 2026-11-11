@@ -1,0 +1,422 @@
+[
+  {
+    "cell": "pilot_haiku45_toff_enone_tr0",
+    "model": "claude-haiku-4-5",
+    "thinking": "off",
+    "thinking_json": "",
+    "effort": null,
+    "complete": true,
+    "sims": [
+      {
+        "task_id": "0",
+        "passed": false,
+        "reward": 0.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.017637700000000003,
+        "user_cost": 0.007363,
+        "input_tokens": 39143,
+        "output_tokens": 1008,
+        "agent_turns": 6,
+        "agent_generation_seconds": 12.558616745998734
+      },
+      {
+        "task_id": "6",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.01847015,
+        "user_cost": 0.009616,
+        "input_tokens": 44368,
+        "output_tokens": 1166,
+        "agent_turns": 7,
+        "agent_generation_seconds": 16.10816849200637
+      },
+      {
+        "task_id": "31",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.01977295,
+        "user_cost": 0.014457999999999999,
+        "input_tokens": 64819,
+        "output_tokens": 1735,
+        "agent_turns": 9,
+        "agent_generation_seconds": 19.97069865903177
+      },
+      {
+        "task_id": "17",
+        "passed": false,
+        "reward": 0.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.04907865,
+        "user_cost": 0.028259,
+        "input_tokens": 182773,
+        "output_tokens": 3862,
+        "agent_turns": 18,
+        "agent_generation_seconds": 43.608439012023155
+      },
+      {
+        "task_id": "11",
+        "passed": false,
+        "reward": null,
+        "termination_reason": "infrastructure_error",
+        "agent_cost": 0,
+        "user_cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "agent_turns": 0,
+        "agent_generation_seconds": 0
+      }
+    ]
+  },
+  {
+    "cell": "pilot_haiku45_ton_enone_tr0",
+    "model": "claude-haiku-4-5",
+    "thinking": "on",
+    "thinking_json": "{\"type\":\"enabled\",\"budget_tokens\":4096}",
+    "effort": null,
+    "complete": true,
+    "sims": [
+      {
+        "task_id": "0",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.013371150000000002,
+        "user_cost": 0.005149,
+        "input_tokens": 30329,
+        "output_tokens": 1497,
+        "agent_turns": 5,
+        "agent_generation_seconds": 16.609566995015484
+      },
+      {
+        "task_id": "6",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.03431125,
+        "user_cost": 0.015209,
+        "input_tokens": 58610,
+        "output_tokens": 4324,
+        "agent_turns": 8,
+        "agent_generation_seconds": 50.53797912498703
+      },
+      {
+        "task_id": "17",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.0484789,
+        "user_cost": 0.01251,
+        "input_tokens": 68224,
+        "output_tokens": 6202,
+        "agent_turns": 9,
+        "agent_generation_seconds": 63.75629074097378
+      },
+      {
+        "task_id": "31",
+        "passed": false,
+        "reward": 0.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.05589245,
+        "user_cost": 0.022588999999999998,
+        "input_tokens": 97168,
+        "output_tokens": 6763,
+        "agent_turns": 12,
+        "agent_generation_seconds": 72.15464362700004
+      },
+      {
+        "task_id": "11",
+        "passed": false,
+        "reward": null,
+        "termination_reason": "infrastructure_error",
+        "agent_cost": 0,
+        "user_cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "agent_turns": 0,
+        "agent_generation_seconds": 0
+      }
+    ]
+  },
+  {
+    "cell": "pilot_sonnet46_toff_elow_tr0",
+    "model": "claude-sonnet-4-6",
+    "thinking": "off",
+    "thinking_json": "",
+    "effort": "low",
+    "complete": true,
+    "sims": [
+      {
+        "task_id": "6",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.042767849999999996,
+        "user_cost": 0.007572,
+        "input_tokens": 42271,
+        "output_tokens": 513,
+        "agent_turns": 7,
+        "agent_generation_seconds": 16.485999844007893
+      },
+      {
+        "task_id": "0",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.0492786,
+        "user_cost": 0.007761,
+        "input_tokens": 44538,
+        "output_tokens": 746,
+        "agent_turns": 7,
+        "agent_generation_seconds": 21.061934914978337
+      },
+      {
+        "task_id": "31",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.05485365,
+        "user_cost": 0.012693,
+        "input_tokens": 73711,
+        "output_tokens": 1293,
+        "agent_turns": 10,
+        "agent_generation_seconds": 36.732350182006485
+      },
+      {
+        "task_id": "17",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.0865368,
+        "user_cost": 0.011899999999999999,
+        "input_tokens": 110550,
+        "output_tokens": 2106,
+        "agent_turns": 13,
+        "agent_generation_seconds": 50.2319186849636
+      },
+      {
+        "task_id": "11",
+        "passed": false,
+        "reward": null,
+        "termination_reason": "infrastructure_error",
+        "agent_cost": 0,
+        "user_cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "agent_turns": 0,
+        "agent_generation_seconds": 0
+      }
+    ]
+  },
+  {
+    "cell": "pilot_sonnet46_ton_ehigh_tr0",
+    "model": "claude-sonnet-4-6",
+    "thinking": "on",
+    "thinking_json": "{\"type\":\"adaptive\"}",
+    "effort": "high",
+    "complete": true,
+    "sims": [
+      {
+        "task_id": "6",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.05254635,
+        "user_cost": 0.008036,
+        "input_tokens": 44915,
+        "output_tokens": 980,
+        "agent_turns": 7,
+        "agent_generation_seconds": 28.10417829801736
+      },
+      {
+        "task_id": "0",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.07024815,
+        "user_cost": 0.007735,
+        "input_tokens": 44493,
+        "output_tokens": 2152,
+        "agent_turns": 7,
+        "agent_generation_seconds": 48.30557541702001
+      },
+      {
+        "task_id": "31",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.036813599999999995,
+        "user_cost": 0.006494,
+        "input_tokens": 31849,
+        "output_tokens": 1278,
+        "agent_turns": 5,
+        "agent_generation_seconds": 31.05647033097921
+      },
+      {
+        "task_id": "17",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.14322405,
+        "user_cost": 0.008046,
+        "input_tokens": 105676,
+        "output_tokens": 5598,
+        "agent_turns": 11,
+        "agent_generation_seconds": 110.03570690596825
+      },
+      {
+        "task_id": "11",
+        "passed": false,
+        "reward": null,
+        "termination_reason": "infrastructure_error",
+        "agent_cost": 0,
+        "user_cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "agent_turns": 0,
+        "agent_generation_seconds": 0
+      }
+    ]
+  },
+  {
+    "cell": "pilot_opus47_toff_elow_tr0",
+    "model": "claude-opus-4-7",
+    "thinking": "off",
+    "thinking_json": "",
+    "effort": "low",
+    "complete": true,
+    "sims": [
+      {
+        "task_id": "6",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.0773935,
+        "user_cost": 0.004934,
+        "input_tokens": 39582,
+        "output_tokens": 380,
+        "agent_turns": 5,
+        "agent_generation_seconds": 6.94412120700872
+      },
+      {
+        "task_id": "0",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.084076,
+        "user_cost": 0.005804,
+        "input_tokens": 47654,
+        "output_tokens": 465,
+        "agent_turns": 6,
+        "agent_generation_seconds": 8.773169030013378
+      },
+      {
+        "task_id": "31",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.075248,
+        "user_cost": 0.013278,
+        "input_tokens": 79637,
+        "output_tokens": 659,
+        "agent_turns": 9,
+        "agent_generation_seconds": 16.197388531989418
+      },
+      {
+        "task_id": "17",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.14576975,
+        "user_cost": 0.012322999999999999,
+        "input_tokens": 126430,
+        "output_tokens": 1695,
+        "agent_turns": 12,
+        "agent_generation_seconds": 31.051570009978605
+      },
+      {
+        "task_id": "11",
+        "passed": false,
+        "reward": null,
+        "termination_reason": "infrastructure_error",
+        "agent_cost": 0,
+        "user_cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "agent_turns": 0,
+        "agent_generation_seconds": 0
+      }
+    ]
+  },
+  {
+    "cell": "pilot_opus47_ton_ehigh_tr0",
+    "model": "claude-opus-4-7",
+    "thinking": "on",
+    "thinking_json": "{\"type\":\"adaptive\"}",
+    "effort": "high",
+    "complete": true,
+    "sims": [
+      {
+        "task_id": "0",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.0953745,
+        "user_cost": 0.006058,
+        "input_tokens": 49778,
+        "output_tokens": 736,
+        "agent_turns": 6,
+        "agent_generation_seconds": 10.135153502997127
+      },
+      {
+        "task_id": "6",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.0884475,
+        "user_cost": 0.019202,
+        "input_tokens": 95136,
+        "output_tokens": 942,
+        "agent_turns": 11,
+        "agent_generation_seconds": 17.49916177801788
+      },
+      {
+        "task_id": "17",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.149502,
+        "user_cost": 0.007508,
+        "input_tokens": 94868,
+        "output_tokens": 2502,
+        "agent_turns": 9,
+        "agent_generation_seconds": 31.367620162011008
+      },
+      {
+        "task_id": "31",
+        "passed": true,
+        "reward": 1.0,
+        "termination_reason": "user_stop",
+        "agent_cost": 0.12719475,
+        "user_cost": 0.017422,
+        "input_tokens": 97150,
+        "output_tokens": 1986,
+        "agent_turns": 10,
+        "agent_generation_seconds": 27.24865153899009
+      },
+      {
+        "task_id": "11",
+        "passed": false,
+        "reward": null,
+        "termination_reason": "infrastructure_error",
+        "agent_cost": 0,
+        "user_cost": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "agent_turns": 0,
+        "agent_generation_seconds": 0
+      }
+    ]
+  }
+]
